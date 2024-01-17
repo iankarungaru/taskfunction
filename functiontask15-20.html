@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <img src="payroll-logo.png" alt="Payroll Logo" />
+    <h1 style="font-weight: 900">NETPAY CALCULATOR</h1>
+  </head>
+
+  <body>
+    <p style="font-weight: bolder">
+      Enter the gross salary below amount to calculate your net amount
+    </p>
+
+    <form id="myform" action="">
+      <label for="basic_salary">Basic Salary:</label>
+      <input type="text" id="basic_salary" />
+      <label for="benefits">Benefits:</label>
+      <input type="text" id="benefits" />
+      <input
+        type="submit"
+        value="CALCULATE SUM"
+        style="background-color: orange; color: white"
+      />
+    </form>
+
+    <table id="myTable" style="width: 800px; height: 250px; padding-top: 20px">
+      <thead>
+        <tr>
+          <th style="text-align: left">Description</th>
+          <th style="text-align: left">Result</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <tr>
+          <td>GROSS SALARY</td>
+          <td id="gross_salary"></td>
+        </tr>
+        <tr>
+          <td>NSSF</td>
+          <td id="nssf"></td>
+        </tr>
+        <tr>
+          <td>NHDF</td>
+          <td id="nhdf"></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">FINAL PAYEE</td>
+          <td id="final_payee"></td>
+        </tr>
+        <tr>
+          <td>NHIF</td>
+          <td id="nhif"></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold">NET PAY</td>
+          <td id="net_pay"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="functiontask15-20.js"></script>
+  </body>
+</html>
